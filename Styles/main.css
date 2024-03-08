@@ -4,27 +4,34 @@ header {
   top: 0;
   display: flex;
   justify-content: space-between;
-  height: 90px;
+  height: 50px;
   padding: 8px 8px 8px 30px;
   background-color: var(--main-color);
   border-radius: 5px;
+  border: 3px solid var(--dark-purple);
 }
 
 .logo {
   display: flex;
   align-items: center;
+  gap: 5px;
 }
 
 .logo img {
-  width: 300px;
+  width: 200px;
 }
 
-nav {
+.logo .material-icons {
+  color: #fff;
+}
+
+.icons {
   display: flex;
+  align-items: center;
   gap: 10px;
 }
 
-nav a {
+.icons .material-icons {
   width: 35px;
   height: 35px;
   border: 3px solid var(--dark-purple);
