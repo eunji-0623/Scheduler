@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
     <!-- Favicon -->
     <link rel="icon" href="./Images/favicon.svg" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Press+Start+2P&display=swap" rel="stylesheet" />
     <!-- CSS Styles -->
     <link rel="stylesheet" href="./Styles/common.css" />
     <link rel="stylesheet" href="./Styles/main.css" />
@@ -24,12 +28,49 @@
         <div class="material-icons">close</div>
       </div>
     </header>
+    <main>
+      <section id="all"></section>
+      <section id="month"></section>
+      <section id="week"></section>
+      <section id="todo">
+        <div class="window todo">
+          <div class="tab">
+            <div class="title"><span>To-Do</span><span class="material-icons">favorite</span></div>
+            <div class="icons clickable">
+              <div class="material-icons">close</div>
+            </div>
+          </div>
+          <div class="contents"></div>
+          <div class="bottom"></div>
+        </div>
+        <div class="window controls">
+          <div class="tab">
+            <div class="title"><span>Controls</span><span class="material-icons">favorite</span></div>
+          </div>
+          <div class="contents clickable">
+            <div class="material-icons">edit</div>
+            <div class="material-icons">settings</div>
+            <div class="material-icons">check_box</div>
+            <div class="material-icons">alarm_on</div>
+          </div>
+        </div>
+        <div class="window timeTable">
+          <div class="tab">
+            <div class="title"><span>Time Table</span><span class="material-icons">favorite</span></div>
+            <div class="icons clickable">
+              <div class="material-icons">close</div>
+            </div>
+          </div>
+          <div class="contents"></div>
+        </div>
+      </section>
+    </main>
     <footer>
       <div class="buttons">
-        <div id="btn-all" class="material-icons">apps</div>
-        <div id="btn-month" class="material-icons">calendar_month</div>
-        <div id="btn-week" class="material-icons">calendar_today</div>
-        <div id="btn-todo" class="material-icons">check_box</div>
+        <a href="#all" class="material-icons">apps</a>
+        <a href="#month" class="material-icons">calendar_month</a>
+        <a href="#week" class="material-icons">calendar_today</a>
+        <a href="#todo" class="material-icons">check_box</a>
       </div>
     </footer>
   </body>

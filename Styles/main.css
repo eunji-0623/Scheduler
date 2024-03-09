@@ -1,9 +1,14 @@
+body {
+  overflow: hidden;
+}
+
 /* HEADER */
 header {
-  position: sticky;
+  position: fixed;
   top: 0;
   display: flex;
   justify-content: space-between;
+  width: 100%;
   height: 50px;
   padding: 8px 8px 8px 30px;
   background-color: var(--main-color);
@@ -72,6 +77,108 @@ footer .buttons .material-icons {
   color: var(--dark-purple);
 }
 
-footer .buttons .material-icons:hover {
+/* SECTION COMMON */
+section {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../Images/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px 0 60px;
+}
+
+.window {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--main-color);
+  border-radius: 5px;
+  border: 3px solid var(--dark-purple);
+}
+
+.window .tab {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 0 0 50px;
+  padding: 8px 8px 8px 20px;
+}
+
+.window .tab .title {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-family: "Press Start 2P", system-ui;
+  font-size: 18px;
+  color: #fff;
+}
+
+.window .contents {
+  overflow: auto;
+  background-color: #fff;
+  flex-grow: 1;
+}
+
+.window .bottom {
+  bottom: 0px;
+  width: 100%;
+  min-height: 50px;
+  background-color: var(--main-color);
+}
+
+.clickable .material-icons:hover {
   cursor: pointer;
+}
+
+/* SECTION - ALL */
+#all {
+}
+
+/* SECTION - MONTH */
+#month {
+}
+
+/* SECTION - WEEK */
+#week {
+}
+
+/* SECTION - TODO */
+#todo {
+  display: grid;
+  grid-template: 3fr 1fr 3fr / 5fr 2fr;
+  grid-template-areas:
+    "todo controls"
+    "todo ."
+    "timeTable timeTable";
+  gap: 40px;
+}
+
+#todo .window.todo {
+  margin: 40px 20px 0 40px;
+  grid-area: todo;
+}
+
+#todo .window.controls {
+  background-color: var(--pink);
+  border-color: var(--dark-pink);
+  margin: 80px 40px 20px 0;
+  grid-area: controls;
+}
+
+#todo .controls .contents {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+#todo .controls .contents div {
+  width: 48px;
+  height: 48px;
+  font-size: 48px;
+  color: var(--pink);
+}
+
+#todo .window.timeTable {
+  margin: 10px 60px 40px 100px;
+  grid-area: timeTable;
 }
