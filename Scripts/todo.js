@@ -35,6 +35,8 @@ function createTask(_startTime, _endTime, _description) {
   icons.className = "icons clickable";
   editIcon.className = "material-icons";
   settingIcon.className = "material-icons";
+  editIcon.textContent = "edit";
+  settingIcon.textContent = "settings";
   icons.append(editIcon, settingIcon);
 
   task.append(checkWrapper, timeWrapper, description, icons);
