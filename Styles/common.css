@@ -30,3 +30,7 @@ a {
   -webkit-user-select: none;
   user-select: none;
 }
+
+.hidden {
+  display: none !important;
+}
